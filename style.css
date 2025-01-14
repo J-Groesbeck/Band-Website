@@ -1,3 +1,27 @@
+/* to be removed or added as needed */
 #windEnsemble {
     display: none !important;
+}
+
+
+/* footer syling */
+footer {
+    background-color: #39559b;
+    padding: 2rem;
+    margin-top: 1.5rem;
+    text-align: center !important;
+    padding-bottom: .5rem !important;
+    padding-top: 1rem !important;
+    justify-content: center;
+    color: white;
+}
+
+.fa-links {
+    color: rgb(251, 251, 251);
+    display: inline !important;
+}
+
+.footer-logo-sizing {
+    height: 4rem;
+    width: auto;
 }
