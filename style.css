@@ -18,3 +18,61 @@ footer {
     height: 4rem;
     width: auto;
 }
+
+/* banners to seperate the sections in ensembles.html */
+.ensemble-banners {
+    background-image: url(https://picsum.photos/1480/240);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* h1s sized for ensemble.html */
+
+h1 {
+    font-size: 7rem !important;
+}
+
+.corner-borders {
+    position: relative;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+}
+
+.corner-borders::before,
+.corner-borders::after {
+    content: '';
+    position: absolute;
+    width: 250px;
+    /* Adjust size for more coverage */
+    height: 40%;
+    /* Adjust size for more coverage */
+    background-color: transparent;
+    /* Transparent to avoid overlap */
+}
+
+.corner-borders::before {
+    top: 0;
+    left: 0;
+    border-top: 25px solid black;
+    /* Thicker border */
+    border-left: 25px solid black;
+    /* Thicker border */
+}
+
+.corner-borders::after {
+    bottom: 0;
+    right: 0;
+    border-bottom: 25px solid black;
+    /* Thicker border */
+    border-right: 25px solid black;
+    /* Thicker border */
+}
