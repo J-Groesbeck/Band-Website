@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 /* footer syling */
 footer {
     background-color: #39559b;
@@ -36,22 +40,20 @@ footer {
 /* h1s sized for ensemble.html */
 
 h1 {
-    font-size: 7rem !important;
+    font-size: 5.833vw !important;
 }
 
 .corner-borders {
     position: relative;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: .4rem;
-    padding-bottom: .4rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
 }
 
 .corner-borders::before,
 .corner-borders::after {
     content: '';
     position: absolute;
-    width: 250px;
+    width: 13.021vw;
     /* Adjust size for more coverage */
     height: 40%;
     /* Adjust size for more coverage */
@@ -62,17 +64,100 @@ h1 {
 .corner-borders::before {
     top: 0;
     left: 0;
-    border-top: 25px solid black;
+    border-top: 0.781vw solid black;
     /* Thicker border */
-    border-left: 25px solid black;
+    border-left: 0.781vw solid black;
     /* Thicker border */
 }
 
 .corner-borders::after {
     bottom: 0;
     right: 0;
-    border-bottom: 25px solid black;
+    border-bottom: 0.781vw solid black;
     /* Thicker border */
-    border-right: 25px solid black;
+    border-right: 0.781vw solid black;
     /* Thicker border */
+}
+
+/* Styling for checkboxes */
+
+body #cbx1:checked,
+body #cbx2:checked {
+    border-color: transparent !important;
+    animation: jelly 0.6s ease !important;
+}
+
+body #cbx1:checked:after,
+body #cbx2:checked:after {
+    opacity: 1 !important;
+    transform: rotate(45deg) scale(1) !important;
+}
+
+@keyframes jelly {
+    from {
+        transform: scale(1, 1);
+    }
+
+    30% {
+        transform: scale(1.25, 0.75);
+    }
+
+    40% {
+        transform: scale(0.75, 1.25);
+    }
+
+    50% {
+        transform: scale(1.15, 0.85);
+    }
+
+    65% {
+        transform: scale(0.95, 1.05);
+    }
+
+    75% {
+        transform: scale(1.05, 0.95);
+    }
+
+    to {
+        transform: scale(1, 1);
+    }
+}
+
+
+/* Temp styling for navbar */
+.shadow-drop-2-center {
+    -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes shadow-drop-2-center {
+    0% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        -webkit-transform: translateZ(50px);
+        transform: translateZ(50px);
+        -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+}
+
+@keyframes shadow-drop-2-center {
+    0% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        -webkit-transform: translateZ(50px);
+        transform: translateZ(50px);
+        -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
 }
