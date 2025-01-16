@@ -38,14 +38,14 @@
                             </a>
                             <ul class="dropdown-menu position-absolute">
                                 <li><a class="dropdown-item" onclick="document.getElementById('concert_band').scrollIntoView();">Concert Band</a></li>
-                                <li><a class="dropdown-item" onclick="document.getElementById('concert_band').scrollIntoView();">Concert Orchestra</a></li>
-                                <li><a class="dropdown-item" onclick="document.getElementById('concert_band').scrollIntoView();">Choir</a></li>
-                                <li><a class="dropdown-item" onclick="document.getElementById('concert_band').scrollIntoView();">Pop Music</a></li>
-                                <li><a class="dropdown-item" onclick="document.getElementById('concert_band').scrollIntoView();">Marching Band</a></li>
-                                <li class="d-none"><a class="dropdown-item" onclick="document.getElementById('concert_band').scrollIntoView();">Wind Ensemble</a></li>
-                                <li><a class="dropdown-item" onclick="document.getElementById('concert_band').scrollIntoView();">Jazz Band</a></li>
-                                <li><a class="dropdown-item" onclick="document.getElementById('concert_band').scrollIntoView();">Pit Orchestra</a></li>
-                                <li><a class="dropdown-item" onclick="document.getElementById('concert_band').scrollIntoView();">Chamber Ensembles</a></li>
+                                <li><a class="dropdown-item" onclick="document.getElementById('concert_orchestra').scrollIntoView();">Concert Orchestra</a></li>
+                                <li><a class="dropdown-item" onclick="document.getElementById('concert_choir').scrollIntoView();">Choir</a></li>
+                                <li><a class="dropdown-item" onclick="document.getElementById('pop_music').scrollIntoView();">Pop Music</a></li>
+                                <li><a class="dropdown-item" onclick="document.getElementById('marching_band').scrollIntoView();">Marching Band</a></li>
+                                <li class="d-none"><a class="dropdown-item" onclick="document.getElementById('wind_ensemble').scrollIntoView();">Wind Ensemble</a></li>
+                                <li><a class="dropdown-item" onclick="document.getElementById('jazz_band').scrollIntoView();">Jazz Band</a></li>
+                                <li><a class="dropdown-item" onclick="document.getElementById('pit_orchestra').scrollIntoView();">Pit Orchestra</a></li>
+                                <li><a class="dropdown-item" onclick="document.getElementById('chamber_ensembles').scrollIntoView();">Chamber Ensembles</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -58,6 +58,12 @@
     </header>
     <main>
         <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 ensemble-main-banner text-center">
+                    <h1>Take A Look At Our<br>Classes & Ensembles</h1>
+                    <h6>Concert Band, Orchestra, Choir, Pop Music, Marching Band, Jazz Band, Pit Orchestra, Chamber Ensembles</h6>
+                </div>
+            </div>
             <div id="vue_app" class="row text-center mt-3 mb-5">
                 <div class="col-4"></div>
                 <div class="col-2">
@@ -136,8 +142,8 @@
                 <div class="col-1"></div>
                 <div class="col-5 my-2">
                     <div class="row">
-                        <div class="col-6"><img src="https://picsum.photos/300/300"></div>
-                        <div class="col-6"><img src="https://picsum.photos/300/300"></div>
+                        <div class="col-6"><img class="w-100" src="https://picsum.photos/300/300"></div>
+                        <div class="col-6"><img class="w-100" src="https://picsum.photos/300/300"></div>
                     </div>
                 </div>
                 <div class="col-5 mt-2">
@@ -179,7 +185,7 @@
                 </div>
             </div>
         </div>
-        <!-- Need to double check will actually be extracurricular, uncomment to add into the website -->
+        <!-- Uncomment to add into the website -->
         <!-- <div class="row ensembles extracurricular" id="wind_ensemble">
                 <div class="col-12 ensemble-banners">
                     <div class="corner-borders">
