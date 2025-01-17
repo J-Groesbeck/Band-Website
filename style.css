@@ -23,15 +23,27 @@ footer {
     width: auto;
 }
 
+.vertical-center {
+    display: flex !important;
+    align-items: center !important;
+}
+
 /* main ensembles banner */
 
 .ensemble-main-banner {
-    background-image: url(https://picsum.photos/1480/240);
+    background-image: url(https://lh6.googleusercontent.com/Dr8PWY2MbcB8bL-auZA2Bm8hLN4oQeLNj3iEXKrG_XhZvzQvNUfLy8WLntCcm943gdPwwu3tJIgkrQyKxF6YHyU=w16383);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 25rem;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-blend-mode: overlay;
+    background-color: #bdbdbd;
 }
 
 /* banners to seperate the sections in ensembles.html */
