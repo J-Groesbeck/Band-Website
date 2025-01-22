@@ -104,16 +104,59 @@ h1 {
 
 /* Styling for checkboxes */
 
-body #cbx1:checked,
-body #cbx2:checked {
+.form-check {
+    position: relative;
+    display: inline-block;
+}
+
+.form-check-input {
+    display: none;
+    visibility: hidden;
+}
+
+.form-check-label {
+    position: relative;
+    top: 1px;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #c8ccd4;
+    border-radius: 3px;
+    vertical-align: middle;
+    transition: background 0.1s ease;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.form-check-label:after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 5px;
+    width: 5px;
+    height: 11px;
+    opacity: 0;
+    transform: rotate(45deg) scale(0);
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transition: all 0.3s ease;
+    transition-delay: 0.15s;
+}
+
+.form-check-input:checked~.form-check-label {
     border-color: transparent !important;
+    background: #39559b;
     animation: jelly 0.6s ease !important;
 }
 
-body #cbx1:checked:after,
-body #cbx2:checked:after {
+.form-check-input:checked~.form-check-label:after {
     opacity: 1 !important;
     transform: rotate(45deg) scale(1) !important;
+}
+
+.lbl {
+    margin-left: 5px;
+    vertical-align: middle;
+    cursor: pointer;
 }
 
 @keyframes jelly {
@@ -146,11 +189,49 @@ body #cbx2:checked:after {
     }
 }
 
+/* Search Box Styling */
+
+.input {
+    position: relative;
+}
+
+.input__label {
+    position: absolute;
+    left: 5px;
+    top: 12.5%;
+    padding: calc(var(--size-bezel) * 0.75) calc(var(--size-bezel) * 0.5);
+    margin: calc(var(--size-bezel) * 0.75 + 3px) calc(var(--size-bezel) * 0.5);
+    white-space: nowrap;
+    transform: translate(0, 0);
+    transform-origin: 0 0;
+    background: transparent;
+    transition: transform 120ms ease-in;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.input__field {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border: 3px solid currentColor;
+    padding: calc(var(--size-bezel) * 1.5) var(--size-bezel);
+    color: currentColor;
+    background: transparent;
+    border-radius: var(--size-radius);
+}
+
+.input__field:focus+.input__label,
+.input__field:not(:placeholder-shown)+.input__label {
+    transform: translate(0.25rem, -100%) scale(0.8);
+    color: var(--color-accent);
+}
+
 
 /* Temp styling for navbar */
 .rotate-center {
-	-webkit-animation: rotate-center 0.6s ease-in-out both;
-	        animation: rotate-center 0.6s ease-in-out both;
+    -webkit-animation: rotate-center 0.6s ease-in-out both;
+    animation: rotate-center 0.6s ease-in-out both;
 }
 
 /* ----------------------------------------------
@@ -165,24 +246,26 @@ body #cbx2:checked:after {
  * animation rotate-center
  * ----------------------------------------
  */
- @-webkit-keyframes rotate-center {
+@-webkit-keyframes rotate-center {
     0% {
-      -webkit-transform: rotate(0);
-              transform: rotate(0);
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
     }
+
     100% {
-      -webkit-transform: rotate(360deg);
-              transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  @keyframes rotate-center {
+}
+
+@keyframes rotate-center {
     0% {
-      -webkit-transform: rotate(0);
-              transform: rotate(0);
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
     }
+
     100% {
-      -webkit-transform: rotate(360deg);
-              transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  
+}

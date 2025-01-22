@@ -86,25 +86,27 @@
             </div>
             <div id="vue_app" class="row text-center my-3">
                 <div class="col-4"></div>
-                <div class="col-2">
-                    <input class="w-100" type="text" placeholder="Search" v-model="searchTerm" v-on:input="search()" />
+                <div class="col-2 vertical-center">
+                    <label class="input w-100">
+                        <input class="input__field" type="text" placeholder=" " v-model="searchTerm" v-on:input="search()"/>
+                        <span class="input__label">Search</span>
+                    </label>
+                    
                 </div>
                 <div class="col-1">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="cbx1"
                             v-on:input="filterClass = !filterClass; filterExtras = false; checkcbxs()">
-                        <label class="form-check-label" for="cbx1" class="cbx">
-                            In-Class
-                        </label>
+                        <label class="form-check-label" for="cbx1" class="cbx"></label><br>
+                        <label class="lbl" for="cbx1">In-Class</label>
                     </div>
                 </div>
                 <div class="col-1">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="cbx2"
-                            v-on:input="filterClass = false; filterExtras = !filterExtras; checkcbxs()">
-                        <label class="form-check-label" for="cbx2" class="cbx">
-                            Extracuriculars
-                        </label>
+                            v-on:input="filterExtras = !filterExtras; filterClass = false; checkcbxs()">
+                        <label class="form-check-label" for="cbx2" class="cbx"></label>
+                        <label class="lbl" for="cbx2">Extracuriculars</label>
                     </div>
                 </div>
                 <div class="col-4"></div>
@@ -143,99 +145,99 @@
                         perform pieces of repertoire together as a combined ensemble. Outside of class, the entire group
                         rehearses after school two to three times a week.</h5>
                 </div>
-                <div class="col-2"><img class="w-100 rounded mb-2" src="https://picsum.photos/300/300">
-                    <div class="col-2"></div>
-                </div>
-                <div class="row ensembles mb-2 inClass" id="concert_choir">
-                    <div class="col-12 ensemble-banners mb-2">
-                        <div class="corner-borders">
-                            <h1>CONCERT CHOIR</h1>
-                        </div>
-                    </div>
-                    <div class="col-2"></div>
-                    <div class="col-2"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
-                    <div class="col-4 vertical-center text-center">
-                        <h5>This section of vocalists works through various exercises to become an elite singer.
-                            Students
-                            work
-                            on
-                            range, expression and balance as an ensemble. The choir also works on various pieces of
-                            repertoire.
-                        </h5>
-                    </div>
-                    <div class="col-2"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
-                    <div class="col-2"></div>
-                </div>
-                <div class="row ensembles mb-2 inClass" id="pop_music">
-                    <div class="col-12 ensemble-banners mb-2">
-                        <div class="corner-borders">
-                            <h1>POP MUSIC</h1>
-                        </div>
-                    </div>
-                    <div class="col-2"></div>
-                    <div class="col-2"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
-                    <div class="col-4 vertical-center text-center">
-                        <h5>This class exposes students to an array of musical genres. Music history, theory, analysis
-                            and
-                            expression are just a few concepts of many that students will cover throughout this semester
-                            course.
-                        </h5>
-                    </div>
-                    <div class="col-2"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
-                    <div class="col-2"></div>
-                </div>
-                <div class="row ensembles mb-2 extracurricular" id="marching_band">
-                    <div class="col-12 ensemble-banners mb-2">
-                        <div class="corner-borders">
-                            <h1>MARCHING BAND</h1>
-                        </div>
-                    </div>
-                    <div class="col-2"></div>
-                    <div class="col-2"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
-                    <div class="col-4 vertical-center text-center">
-                        <div class="row">
-                            <div class="col-12">
-                                <h5>The pride of our school is displayed in the numerous performances of the Marching
-                                    Mustangs!
-                                    The
-                                    marching band meets for several days of band camp in the last weeks of August to
-                                    prepare
-                                    for
-                                    the
-                                    Fall season of shows. Performances include all football games and various festivals.
-                                    We
-                                    are
-                                    lucky to
-                                    be supported by Mrs. Reich (as seen on the left) as our assistant band director, in
-                                    addition
-                                    to
-                                    Mr.
-                                    Ippolito.</h5>
-                            </div>
-                            <h5>Here is the list of our current leadership team:</h5>
-                            <div class="col-6">
-                                <ul>
-                                    <li>Head Drum Major - Leah Trezza</li>
-                                    <li>Assistant </li>
-                                    <li>Student Executive - Chananed Tangchitpiyanond</li>
-                                    <li>Woodwind Captain - Jacob Groesbeck</li>
-                                    <li>Brass Captain - Nirek Dhage</li>
-                                </ul>
-                            </div>
-                            <div class="col-6">
-                                <li>Drum Captain - Emma Yee</li>
-                                <li>Flute Section Leader - Emma Preap</li>
-                                <li>Clarinet/Sousa Section Leader - Talia Shrayef</li>
-                                <li>Sax Section Leader - Isabel Licona Klein</li>
-                                <li>Low Brass Section Leader - Sunay Bhatt</li>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
-                </div>
+                <div class="col-2"><img class="w-100 rounded mb-2" src="https://picsum.photos/300/300"></div>
+                <div class="col-2"></div>
             </div>
-            <!-- Uncomment to add into the website -->
-            <!-- <div class="row ensembles mb-2 extracurricular" id="wind_ensemble">
+            <div class="row ensembles mb-2 inClass" id="concert_choir">
+                <div class="col-12 ensemble-banners mb-2">
+                    <div class="corner-borders">
+                        <h1>CONCERT CHOIR</h1>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-2"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
+                <div class="col-4 vertical-center text-center">
+                    <h5>This section of vocalists works through various exercises to become an elite singer.
+                        Students
+                        work
+                        on
+                        range, expression and balance as an ensemble. The choir also works on various pieces of
+                        repertoire.
+                    </h5>
+                </div>
+                <div class="col-2"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
+                <div class="col-2"></div>
+            </div>
+            <div class="row ensembles mb-2 inClass" id="pop_music">
+                <div class="col-12 ensemble-banners mb-2">
+                    <div class="corner-borders">
+                        <h1>POP MUSIC</h1>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-2"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
+                <div class="col-4 vertical-center text-center">
+                    <h5>This class exposes students to an array of musical genres. Music history, theory, analysis
+                        and
+                        expression are just a few concepts of many that students will cover throughout this semester
+                        course.
+                    </h5>
+                </div>
+                <div class="col-2"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
+                <div class="col-2"></div>
+            </div>
+            <div class="row ensembles mb-2 extracurricular" id="marching_band">
+                <div class="col-12 ensemble-banners mb-2">
+                    <div class="corner-borders">
+                        <h1>MARCHING BAND</h1>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-2"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
+                <div class="col-4 vertical-center text-center">
+                    <div class="row">
+                        <div class="col-12">
+                            <h5>The pride of our school is displayed in the numerous performances of the Marching
+                                Mustangs!
+                                The
+                                marching band meets for several days of band camp in the last weeks of August to
+                                prepare
+                                for
+                                the
+                                Fall season of shows. Performances include all football games and various festivals.
+                                We
+                                are
+                                lucky to
+                                be supported by Mrs. Reich (as seen on the left) as our assistant band director, in
+                                addition
+                                to
+                                Mr.
+                                Ippolito.</h5>
+                        </div>
+                        <h5>Here is the list of our current leadership team:</h5>
+                        <div class="col-6">
+                            <ul>
+                                <li>Head Drum Major - Leah Trezza</li>
+                                <li>Assistant </li>
+                                <li>Student Executive - Chananed Tangchitpiyanond</li>
+                                <li>Woodwind Captain - Jacob Groesbeck</li>
+                                <li>Brass Captain - Nirek Dhage</li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <li>Drum Captain - Emma Yee</li>
+                            <li>Flute Section Leader - Emma Preap</li>
+                            <li>Clarinet/Sousa Section Leader - Talia Shrayef</li>
+                            <li>Sax Section Leader - Isabel Licona Klein</li>
+                            <li>Low Brass Section Leader - Sunay Bhatt</li>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
+            </div>
+        </div>
+        <!-- Uncomment to add into the website -->
+        <!-- <div class="row ensembles mb-2 extracurricular" id="wind_ensemble">
                 <div class="col-12 ensemble-banners mb-2">
                     <div class="corner-borders">
                         <h1>WIND ENSEMBLE</h1>
@@ -252,59 +254,59 @@
                 <div class="col-2"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
                 <div class="col-2"></div>
             </div> -->
-            <div class="row ensembles mb-2 extracurricular" id="jazz_band">
-                <div class="col-12 ensemble-banners mb-2">
-                    <div class="corner-borders">
-                        <h1>JAZZ BAND</h1>
-                    </div>
+        <div class="row ensembles mb-2 extracurricular" id="jazz_band">
+            <div class="col-12 ensemble-banners mb-2">
+                <div class="corner-borders">
+                    <h1>JAZZ BAND</h1>
                 </div>
-                <div class="col-2"></div>
-                <div class="col-2"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
-                <div class="col-4 vertical-center text-center">
-                    <h5>This is an elite ensemble of musicians who perform various styles of jazz such as big band,
-                        swing,
-                        bebop, fusion and more. This group is a select group and meets after school from winter through
-                        spring.</h5>
-                </div>
-                <div class="col-2"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
-                <div class="col-2"></div>
             </div>
-            <div class="row ensembles mb-2 extracurricular" id="pit_orchestra">
-                <div class="col-12 ensemble-banners mb-2">
-                    <div class="corner-borders">
-                        <h1>PIT ORCHESTRA</h1>
-                    </div>
-                </div>
-                <div class="col-2"></div>
-                <div class="col-2"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
-                <div class="col-4 vertical-center text-center">
-                    <h5>This is a select group of musicians who perform for the spring musical. This is a group that
-                        meets
-                        after school for numerous rehearsals to prepare for live shows performed in the spring.
-                        Musicianship
-                        skills are developed further in this group due to the intensity of Broadway musical repertoire!
-                    </h5>
-                </div>
-                <div class="col-2"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
-                <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-2"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
+            <div class="col-4 vertical-center text-center">
+                <h5>This is an elite ensemble of musicians who perform various styles of jazz such as big band,
+                    swing,
+                    bebop, fusion and more. This group is a select group and meets after school from winter through
+                    spring.</h5>
             </div>
-            <div class="row ensembles mb-2 extracurricular" id="chamber_ensembles">
-                <div class="col-12 ensemble-banners mb-2">
-                    <div class="corner-borders">
-                        <h1>CHAMBER ENSEMBLES</h1>
-                    </div>
+            <div class="col-2"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row ensembles mb-2 extracurricular" id="pit_orchestra">
+            <div class="col-12 ensemble-banners mb-2">
+                <div class="corner-borders">
+                    <h1>PIT ORCHESTRA</h1>
                 </div>
-                <div class="col-2"></div>
-                <div class="col-2"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
-                <div class="col-4 vertical-center text-center">
-                    <h5>Marlboro HS is gifted with many talented musicians. Various select groups meet in school and
-                        outside
-                        of school to rehearse challenging small ensemble repertoire. They have numerous opportunities to
-                        perform for the school and the community in addition to concerts.</h5>
-                </div>
-                <div class="col-2"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
-                <div class="col-2"></div>
             </div>
+            <div class="col-2"></div>
+            <div class="col-2"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
+            <div class="col-4 vertical-center text-center">
+                <h5>This is a select group of musicians who perform for the spring musical. This is a group that
+                    meets
+                    after school for numerous rehearsals to prepare for live shows performed in the spring.
+                    Musicianship
+                    skills are developed further in this group due to the intensity of Broadway musical repertoire!
+                </h5>
+            </div>
+            <div class="col-2"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row ensembles mb-2 extracurricular" id="chamber_ensembles">
+            <div class="col-12 ensemble-banners mb-2">
+                <div class="corner-borders">
+                    <h1>CHAMBER ENSEMBLES</h1>
+                </div>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-2"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
+            <div class="col-4 vertical-center text-center">
+                <h5>Marlboro HS is gifted with many talented musicians. Various select groups meet in school and
+                    outside
+                    of school to rehearse challenging small ensemble repertoire. They have numerous opportunities to
+                    perform for the school and the community in addition to concerts.</h5>
+            </div>
+            <div class="col-2"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
+            <div class="col-2"></div>
+        </div>
         </div>
     </main>
     <footer id="footer">
