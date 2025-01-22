@@ -6,7 +6,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="icon" href="imgs/tempLogo.jpg">
+    <link rel="icon" href="imgs/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <!-- Import Vue.js -->
@@ -21,8 +21,8 @@
         <nav class="navbar bg-body-tertiary">
             <div class="container-fluid d-flex justify-content-between align-items-center">
                 <a class="navbar-brand" href="index.html">
-                    <img class="roll-in-blurred-right" src="imgs/tempLogo.jpg" width="50" height="48"
-                        class="d-inline-block align-text-top">
+                    <img class="roll-in-blurred-right" src="imgs/logo.png" width="50" height="48"
+                        class="d-inline-block align-text-top rotate-center">
                 </a>
                 <div class="d-flex">
                     <ul class="navbar-nav ms-auto d-flex flex-row">
@@ -98,20 +98,20 @@
                         <input class="form-check-input" type="checkbox" id="cbx1"
                             v-on:input="filterClass = !filterClass; filterExtras = false; checkcbxs()">
                         <label class="form-check-label" for="cbx1" class="cbx"></label><br>
-                        <label class="lbl" for="cbx1">In-Class</label>
+                        <label class="lbl" for="cbx1">Classes</label>
                     </div>
                 </div>
                 <div class="col-1">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="cbx2"
                             v-on:input="filterExtras = !filterExtras; filterClass = false; checkcbxs()">
-                        <label class="form-check-label" for="cbx2" class="cbx"></label>
+                        <label class="form-check-label" for="cbx2" class="cbx"></label><br>
                         <label class="lbl" for="cbx2">Extracuriculars</label>
                     </div>
                 </div>
                 <div class="col-4"></div>
             </div>
-            <div class="row ensembles mb-2 inClass" id="concert_band">
+            <div class="row ensembles pb-2 inClass" id="concert_band">
                 <div class="col-12 ensemble-banners mb-2">
                     <div class="corner-borders">
                         <h1>CONCERT BAND</h1>
@@ -130,7 +130,7 @@
                 </div>
                 <div class="col-2"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
             </div>
-            <div class="row ensembles mb-2 inClass" id="concert_orchestra">
+            <div class="row ensembles pb-2 inClass" id="concert_orchestra">
                 <div class="col-12 ensemble-banners mb-2">
                     <div class="corner-borders">
                         <h1>CONCERT ORCHESTRA</h1>
@@ -148,7 +148,7 @@
                 <div class="col-2"><img class="w-100 rounded mb-2" src="https://picsum.photos/300/300"></div>
                 <div class="col-2"></div>
             </div>
-            <div class="row ensembles mb-2 inClass" id="concert_choir">
+            <div class="row ensembles pb-2 inClass" id="concert_choir">
                 <div class="col-12 ensemble-banners mb-2">
                     <div class="corner-borders">
                         <h1>CONCERT CHOIR</h1>
@@ -168,7 +168,7 @@
                 <div class="col-2"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
                 <div class="col-2"></div>
             </div>
-            <div class="row ensembles mb-2 inClass" id="pop_music">
+            <div class="row ensembles pb-2 inClass" id="pop_music">
                 <div class="col-12 ensemble-banners mb-2">
                     <div class="corner-borders">
                         <h1>POP MUSIC</h1>
@@ -186,7 +186,7 @@
                 <div class="col-2"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
                 <div class="col-2"></div>
             </div>
-            <div class="row ensembles mb-2 extracurricular" id="marching_band">
+            <div class="row ensembles pb-2 extracurricular" id="marching_band">
                 <div class="col-12 ensemble-banners mb-2">
                     <div class="corner-borders">
                         <h1>MARCHING BAND</h1>
@@ -237,7 +237,7 @@
             </div>
         </div>
         <!-- Uncomment to add into the website -->
-        <!-- <div class="row ensembles mb-2 extracurricular" id="wind_ensemble">
+        <!-- <div class="row ensembles pb-2 extracurricular" id="wind_ensemble">
                 <div class="col-12 ensemble-banners mb-2">
                     <div class="corner-borders">
                         <h1>WIND ENSEMBLE</h1>
@@ -254,7 +254,7 @@
                 <div class="col-2"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
                 <div class="col-2"></div>
             </div> -->
-        <div class="row ensembles mb-2 extracurricular" id="jazz_band">
+        <div class="row ensembles pb-2 extracurricular" id="jazz_band">
             <div class="col-12 ensemble-banners mb-2">
                 <div class="corner-borders">
                     <h1>JAZZ BAND</h1>
@@ -271,7 +271,7 @@
             <div class="col-2"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
             <div class="col-2"></div>
         </div>
-        <div class="row ensembles mb-2 extracurricular" id="pit_orchestra">
+        <div class="row ensembles pb-2 extracurricular" id="pit_orchestra">
             <div class="col-12 ensemble-banners mb-2">
                 <div class="corner-borders">
                     <h1>PIT ORCHESTRA</h1>
@@ -290,7 +290,7 @@
             <div class="col-2"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
             <div class="col-2"></div>
         </div>
-        <div class="row ensembles mb-2 extracurricular" id="chamber_ensembles">
+        <div class="row ensembles pb-2 extracurricular" id="chamber_ensembles">
             <div class="col-12 ensemble-banners mb-2">
                 <div class="corner-borders">
                     <h1>CHAMBER ENSEMBLES</h1>
@@ -318,7 +318,7 @@
                 class="fa-brands fa-twitter fa-2xl pointer"></i></a>
         <a href="https://www.tiktok.com/@mhsmustangsmusic" target="_blank" class="fa-links px-2 border-end"><i
                 class="fa-brands fa-tiktok fa-2xl pointer"></i></a><br>
-        <img src="imgs/tempLogo.jpg" class="footer-logo-sizing mt-2" style="height: 69px;">
+        <img src="imgs/logo.png" class="footer-logo-sizing mt-2" style="height: 69px;">
         <h6 class="mt-1"><b>mippolito@frhsd.com</b></h6>
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.js"
