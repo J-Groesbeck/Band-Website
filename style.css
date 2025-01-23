@@ -28,8 +28,9 @@ footer {
 }
 
 .vertical-center {
-    display: flex !important;
-    align-items: center !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* main ensembles banner */
@@ -64,8 +65,12 @@ footer {
     align-items: center;
 }
 
+#vue_app {
+    background-color: #fdb410;
+}
+
 /* .ensembles {
-    background-color: #f5cf6f !important;
+    background-color: #fdb410 !important;
 } */
 
 /* h1s sized for ensemble.html */
@@ -115,6 +120,7 @@ h1 {
 .form-check {
     position: relative;
     display: inline-block;
+    padding-left: 0 !important;
 }
 
 .form-check-input {
@@ -127,7 +133,7 @@ h1 {
     top: 1px;
     width: 17px;
     height: 17px;
-    border: 1px solid #c8ccd4;
+    border: 1px solid black;
     border-radius: 3px;
     vertical-align: middle;
     transition: background 0.1s ease;
@@ -237,6 +243,16 @@ h1 {
 
 
 /* Temp styling for navbar */
+
+.navbar {
+    background-color: #39559b !important;
+}
+
+.navbar-nav {
+    --bs-nav-link-color: rgb(255 255 255) !important;
+    --bs-nav-link-hover-color: rgb(210 210 210 / 80%) !important;
+}
+
 .rotate-center {
     -webkit-animation: rotate-center 0.6s ease-in-out both;
     animation: rotate-center 0.6s ease-in-out both;
@@ -276,4 +292,9 @@ h1 {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
+}
+
+.no-gutter {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
 }

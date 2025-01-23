@@ -18,7 +18,7 @@
 
 <body>
     <header>
-        <nav class="navbar bg-body-tertiary">
+        <nav class="navbar">
             <div class="container-fluid d-flex justify-content-between align-items-center">
                 <a class="navbar-brand" href="index.html">
                     <img class="roll-in-blurred-right" src="imgs/logo.png" width="50" height="48"
@@ -84,16 +84,17 @@
                         Ensembles</h6>
                 </div>
             </div>
-            <div id="vue_app" class="row text-center my-3">
+            <div id="vue_app" class="row text-center pt-3 pb-2">
                 <div class="col-4"></div>
-                <div class="col-2 vertical-center">
+                <div class="col-4 vertical-center">
                     <label class="input w-100">
                         <input class="input__field" type="text" placeholder=" " v-model="searchTerm" v-on:input="search()"/>
                         <span class="input__label">Search</span>
                     </label>
-                    
                 </div>
-                <div class="col-1">
+                <div class="col-4"></div>
+                <div class="col-4"></div>
+                <div class="col-2">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="cbx1"
                             v-on:input="filterClass = !filterClass; filterExtras = false; checkcbxs()">
@@ -101,7 +102,7 @@
                         <label class="lbl" for="cbx1">Classes</label>
                     </div>
                 </div>
-                <div class="col-1">
+                <div class="col-2">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="cbx2"
                             v-on:input="filterExtras = !filterExtras; filterClass = false; checkcbxs()">
@@ -193,10 +194,10 @@
                     </div>
                 </div>
                 <div class="col-2"></div>
-                <div class="col-2"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
-                <div class="col-4 vertical-center text-center">
+                <div class="col-2 vertical-center"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
+                <div class="col-4 vertical-center">
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-12 text-center">
                             <h5>The pride of our school is displayed in the numerous performances of the Marching
                                 Mustangs!
                                 The
@@ -218,22 +219,22 @@
                         <div class="col-6">
                             <ul>
                                 <li>Head Drum Major - Leah Trezza</li>
-                                <li>Assistant </li>
+                                <li>Assistant D.M. - Dylan Thomas</li>
                                 <li>Student Executive - Chananed Tangchitpiyanond</li>
-                                <li>Woodwind Captain - Jacob Groesbeck</li>
+                                <li>Woodwind Capt. - Jacob Groesbeck</li>
                                 <li>Brass Captain - Nirek Dhage</li>
                             </ul>
                         </div>
                         <div class="col-6">
                             <li>Drum Captain - Emma Yee</li>
                             <li>Flute Section Leader - Emma Preap</li>
-                            <li>Clarinet/Sousa Section Leader - Talia Shrayef</li>
-                            <li>Sax Section Leader - Isabel Licona Klein</li>
-                            <li>Low Brass Section Leader - Sunay Bhatt</li>
+                            <li>Clarinet/Sousaphone Sect. Leader - Talia Shrayef</li>
+                            <li>Sax Sect. Leader - Isabel Licona Klein</li>
+                            <li>Low Brass Sect. Leader - Sunay Bhatt</li>
                         </div>
                     </div>
                 </div>
-                <div class="col-2"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
+                <div class="col-2 vertical-center"><img class="w-100 rounded" src="https://picsum.photos/300/300"></div>
             </div>
         </div>
         <!-- Uncomment to add into the website -->
