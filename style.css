@@ -52,6 +52,11 @@ footer {
 }
 
 /* banners to seperate the sections in ensembles.html */
+
+#mb-banner {
+    background-image: url(imgs/marching-band-banner.jpg);
+}
+
 .ensemble-banners {
     background-image: url(https://picsum.photos/1480/240);
     background-attachment: fixed;
@@ -63,6 +68,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-blend-mode: overlay;
+    background-color: #bdbdbd;
 }
 
 #vue_app {
@@ -297,4 +304,12 @@ h1 {
 .no-gutter {
     padding-right: 0 !important;
     padding-left: 0 !important;
+}
+
+.bg-blue {
+    background-color: #39559b;
+}
+
+dl, ol, ul {
+    margin-bottom: 0 !important;
 }
