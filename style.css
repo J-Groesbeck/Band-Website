@@ -33,6 +33,30 @@ footer {
     justify-content: center;
 }
 
+.bg-1 {
+    background-color: #39559b;
+}
+.bg-2 {
+    background-color: #fdb410;
+}
+
+.drop-shadow-1 {
+    box-shadow: 12px 12px 2px 1px #bd880d;
+}
+
+a.drop-shadow-1:hover {
+    box-shadow: 12px 12px 2px 1px #9c710b;
+}
+
+.drop-shadow-2 {
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 139, 0.2)
+}
+
+a.drop-shadow-2:hover {
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2)
+}
+
+
 /* main ensembles banner */
 
 .ensemble-main-banner {
