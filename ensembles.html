@@ -85,17 +85,17 @@
                 </div>
             </div>
             <div id="vue_app" class="row text-center pt-3 pb-2">
-                <div class="col-4"></div>
-                <div class="col-4 vertical-center">
+                <div class="d-none d-md-block col-4"></div>
+                <div class="col-12 col-md-4 vertical-center">
                     <label class="input w-100">
                         <input class="input__field" type="text" placeholder=" " v-model="searchTerm"
                             v-on:input="search()" />
                         <span class="input__label">Search</span>
                     </label>
                 </div>
-                <div class="col-4"></div>
-                <div class="col-4"></div>
-                <div class="col-2">
+                <div class="d-none d-md-block col-4"></div>
+                <div class="col-1 col-md-4"></div>
+                <div class="col-5 col-md-2">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="cbx1"
                             v-on:input="filterClass = !filterClass; filterExtras = false; checkcbxs()">
@@ -103,7 +103,7 @@
                         <label class="lbl" for="cbx1">Classes</label>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-5 col-md-2">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="cbx2"
                             v-on:input="filterExtras = !filterExtras; filterClass = false; checkcbxs()">
@@ -111,7 +111,7 @@
                         <label class="lbl" for="cbx2">Extracuriculars</label>
                     </div>
                 </div>
-                <div class="col-4"></div>
+                <div class="col-1 col-md-4"></div>
             </div>
             <div class="row ensembles pb-2 pb-lg-5 inClass" id="concert_band">
                 <div class="col-12 ensemble-banners mb-2 mb-lg-5" id="conc-band-bannner">
