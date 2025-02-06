@@ -6,6 +6,10 @@ body {
     overflow-x: hidden;
 }
 
+.cal-height {
+    height: 76.83863885839736vh;
+}
+
 /* footer syling */
 footer {
     background-color: #39559b;
@@ -54,6 +58,25 @@ a.drop-shadow-1:hover {
 
 a.drop-shadow-2:hover {
     box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2)
+}
+
+
+/* main home page banner */
+
+.home-main-banner {
+    background-image: url(imgs/test-banner.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 92.5vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-blend-mode: overlay;
+    background-color: #bdbdbd;
 }
 
 
@@ -281,6 +304,7 @@ h1 {
 
 .navbar {
     background-color: #39559b !important;
+    height: 7.5;
 }
 
 .navbar-nav {

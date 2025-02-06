@@ -1,22 +1,22 @@
-const platinumMembers = ["FirstName LastName1", "FirstName LastName2", "FirstName LastName3", "FirstName LastName4", ]
+const platinumMembers = ["Sara Axelrod-Malagold", "Kunjan Bhatt", "Swati Dhage", "Alicia Caputo Smith", "Wei Ou", "Karen Hao", "Alison and Thomas Tsim", "Peggy Sheehan", "Paula Groesbeck", "Nandini Thomas", "Katherine Trezza", "Kay Haeusser", "Lisa Gianna", "Jessica Ho", "Niranjan Mulay / Madhu Mahajan", "Marine Preap", "Rita Shteynberg", "Ushma Patel", "Anna Bobrowska" ]
 
 platinumMembers.forEach(member => {
     $('#platMembers').append(`<li>${member}</li>`);
 });
 
-const goldMembers = ["FirstName LastName5", "FirstName LastName6", "FirstName LastName7", "FirstName LastName8", ]
+const goldMembers = ["Robert Cameron", "Yanina Reznikov",  ]
 
 goldMembers.forEach(member => {
     $('#golMembers').append(`<li>${member}</li>`);
 });
 
-const silverMembers = ["FirstName LastName9", "FirstName LastName10", "FirstName LastName11", "FirstName LastName12", ]
+const silverMembers = ["Michelle Wolf", "Betty Chang", "Melanie Chazanoff", "Chutchauan T", "Monika Kokosza", "Bheemesh Dwarampuri", "Lauren Faulkner", "Archana Kannughatta" ]
 
 silverMembers.forEach(member => {
     $('#silMembers').append(`<li>${member}</li>`);
 });
 
-const bronzeMembers = ["FirstName LastName13", "FirstName LastName14", "FirstName LastName15", "FirstName LastName16", ]
+const bronzeMembers = ["Lisa Cartelli", "Jamie Sobolewski", ]
 
 bronzeMembers.forEach(member => {
     $('#broMembers').append(`<li>${member}</li>`);
