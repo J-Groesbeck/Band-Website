@@ -60,6 +60,13 @@ a.drop-shadow-2:hover {
     box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2)
 }
 
+.drop-shadow {
+    box-shadow: 12px 12px 2px 1px rgba(85, 81, 81, 0.2)
+}
+
+a.drop-shadow:hover {
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2)
+}
 
 /* main home page banner */
 
@@ -147,6 +154,10 @@ a.drop-shadow-2:hover {
 
 h1 {
     font-size: 7vw !important;
+}
+
+.subtitle-text {
+    font-size: 5vw !important;
 }
 
 .corner-borders {
