@@ -113,7 +113,11 @@ a.drop-shadow-2:hover {
 }
 
 #jazz-banner {
-    background-image: url(imgs/jazz-banner.jpg);
+    background-image: url(imgs/jazz-banner.png);
+}
+
+#pop-music-banner {
+    background-image: url(imgs/pop-banner.png);
 }
 
 .ensemble-banners {
