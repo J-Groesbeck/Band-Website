@@ -108,6 +108,14 @@ a.drop-shadow-2:hover {
     background-image: url(imgs/band-banner.png);
 }
 
+#pit-banner {
+    background-image: url(imgs/pit-banner.png);
+}
+
+#jazz-banner {
+    background-image: url(imgs/jazz-banner.jpg);
+}
+
 .ensemble-banners {
     background-image: url(https://picsum.photos/1480/240);
     background-attachment: fixed;
