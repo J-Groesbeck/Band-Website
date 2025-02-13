@@ -10,6 +10,10 @@ body {
     height: 76.83863885839736vh;
 }
 
+.full-screen {
+    height: 110vh;
+}
+
 /* footer syling */
 footer {
     background-color: #39559b;
@@ -40,6 +44,7 @@ footer {
 .bg-1 {
     background-color: #39559b;
 }
+
 .bg-2 {
     background-color: #fdb410;
 }
