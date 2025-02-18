@@ -118,8 +118,15 @@ a.drop-shadow:hover {
 }
 
 #conc-band-bannner,
-#conc-band-mobile-bannner {
+#conc-band-mobile-bannner,
+#conc-chorus-bannner,
+#conc-chorus-mobile-bannner {
     background-image: url(imgs/band-banner.png);
+}
+
+#conc-choir-banner,
+#conc-choir-mobile-banner {
+    background-image: url(imgs/chorus-banner.jpeg);
 }
 
 #pit-banner,
@@ -135,6 +142,11 @@ a.drop-shadow:hover {
 #pop-music-banner,
 #pop-music-mobile-banner {
     background-image: url(imgs/pop-banner.png);
+}
+
+#chamber-banner,
+#chamber-mobile-banner {
+    background-image: url(imgs/chamber-banner.jpg);
 }
 
 .ensemble-banners {
@@ -179,15 +191,15 @@ h1 {
 
 .corner-borders {
     position: relative;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding-left: 1.25vw;
+    padding-right: 1.25vw;
 }
 
 .corner-borders::before,
 .corner-borders::after {
     content: '';
     position: absolute;
-    width: 13.021vw;
+    width: 15vw;
     /* Adjust size for more coverage */
     height: 40%;
     /* Adjust size for more coverage */
@@ -198,18 +210,18 @@ h1 {
 .corner-borders::before {
     top: 0;
     left: 0;
-    border-top: 0.781vw solid #fdb410;
+    border-top: 1vw solid #fdb410;
     /* Thicker border */
-    border-left: 0.781vw solid #fdb410;
+    border-left: 1vw solid #fdb410;
     /* Thicker border */
 }
 
 .corner-borders::after {
     bottom: 0;
     right: 0;
-    border-bottom: 0.781vw solid #fdb410;
+    border-bottom: 1vw solid #fdb410;
     /* Thicker border */
-    border-right: 0.781vw solid #fdb410;
+    border-right: 1vw solid #fdb410;
     /* Thicker border */
 }
 
