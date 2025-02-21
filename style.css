@@ -80,7 +80,7 @@ footer {
 }
 
 .bg-1 {
-    background-color: #39559b;
+    background-color: #39559b !important;
 }
 
 .bg-2 {
@@ -114,11 +114,11 @@ a.drop-shadow:hover {
 /* main home page banner */
 
 .home-main-banner {
-    background-image: url(imgs/test-banner.jpg);
+    background-image: url(imgs/home-banner.jpg);
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 92.5vh;
+    height: 94vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -133,7 +133,7 @@ a.drop-shadow:hover {
 /* main ensembles banner */
 
 .ensemble-main-banner {
-    background-image: url(imgs/test-banner.jpg);
+    background-image: url(imgs/ensembles-banner.jpg);
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -156,15 +156,18 @@ a.drop-shadow:hover {
 }
 
 #conc-band-bannner,
-#conc-band-mobile-bannner,
+#conc-band-mobile-bannner {
+    background-image: url(imgs/band-banner.jpg);
+}
+
 #conc-chorus-bannner,
 #conc-chorus-mobile-bannner {
-    background-image: url(imgs/band-banner.jpg);
+    background-image: url(imgs/orch-banner.jpg);
 }
 
 #conc-choir-banner,
 #conc-choir-mobile-banner {
-    background-image: url(imgs/chorus-banner.jpeg);
+    background-image: url(imgs/chorus-banner.jpg);
 }
 
 #pit-banner,
@@ -174,7 +177,7 @@ a.drop-shadow:hover {
 
 #jazz-banner,
 #jazz-mobile-banner {
-    background-image: url(imgs/jazz-banner.png);
+    background-image: url(imgs/jazz-banner.jpg);
 }
 
 #pop-music-banner,
@@ -192,13 +195,13 @@ a.drop-shadow:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 15rem;
+    height: 17.5rem;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-blend-mode: overlay;
-    background-color: #39559b;
+    background-color: #bdbdbd;
 }
 
 .ensemble-mobile-banners {
@@ -210,7 +213,7 @@ a.drop-shadow:hover {
     justify-content: center;
     align-items: center;
     background-blend-mode: overlay;
-    background-color: #39559b;
+    background-color: #bdbdbd;
 }
 
 #vue_app {
