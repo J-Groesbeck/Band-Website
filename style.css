@@ -146,7 +146,7 @@ a.drop-shadow:hover {
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 89vh;
+    height: 92vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -686,4 +686,9 @@ ul {
     /* Makes the pseudo-element invisible on hover */
     transform: scale(0.1, 1);
     /* Shrinks the pseudo-element on hover */
+}
+
+/* increase font size for accordion header for homepage */
+.accordion-button {
+    font-size: 1.25rem !important;
 }

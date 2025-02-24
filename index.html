@@ -30,8 +30,8 @@
             <div class="container-fluid d-flex justify-content-between align-items-center">
                 <!-- Logo and link to home page -->
                 <a class="navbar-brand" href="index.html">
-                    <img src="imgs/logo.png" width="50" height="48"
-                        class="d-inline-block align-text-top rotate-center" alt="Marlboro High School Music logo">
+                    <img src="imgs/logo.png" width="50" height="48" class="d-inline-block align-text-top rotate-center"
+                        alt="Marlboro High School Music logo">
                 </a>
 
                 <!-- Navigation links -->
@@ -68,7 +68,8 @@
                     <a href="calendar.html" type="button" class="btn btn-light drop-shadow p-3">Calendar</a>
                 </div>
             </div>
-
+            <!-- Button to scroll to the top of the page when clicked -->
+            <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
             <!-- Section with two columns for showcasing images and information -->
             <div class="row full-screen">
                 <div class="col-6 bg-2 py-5 text-center vertical-center">
@@ -123,14 +124,18 @@
                             </div>
                     </div>
 
-                    <!-- Frequently Asked Questions section (currently commented out) -->
-                    <!-- <div class="row">
-                <div class="col-12 d-none d-md-flex ensemble-banners mb-2 mb-lg-5 bg-1">
-                    <div class="corner-borders text-white">
-                        <h1>Frequently Asked Questions</h1>
+                    <!-- Frequently Asked Questions section-->
+                    <div class="row">
+                        <div class="col-12 d-none d-md-flex ensemble-banners bg-1">
+                            <div class="corner-borders text-white">
+                                <h1>Frequently Asked Questions</h1>
+                            </div>
+                        </div>
+                        <!-- FAQ accordion -->
+                        <div class="col-12 p-5">
+                            <div class="accordion" id="accordionExample"></div>
+                        </div>
                     </div>
-                </div>
-            </div> -->
                 </div>
     </main>
 
@@ -154,6 +159,10 @@
         <h6 class="mt-1"><b>mippolito@frhsd.com</b></h6>
     </footer>
 
+    <!-- Including jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
     <!-- Bootstrap JavaScript libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
