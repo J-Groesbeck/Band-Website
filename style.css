@@ -143,7 +143,7 @@ a.drop-shadow:hover {
 /* Main home page banner */
 .home-main-banner {
     background-image: url(imgs/home-banner.jpg);
-    background-position: left;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 92vh;
@@ -160,7 +160,7 @@ a.drop-shadow:hover {
 /* Main ensembles banner */
 .ensemble-main-banner {
     background-image: url(imgs/ensembles-banner.jpg);
-    background-position: left;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 25rem;
