@@ -26,24 +26,25 @@
 <body>
     <!-- Header section containing the navigation bar -->
     <header>
-        <nav class="navbar">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid d-flex justify-content-between align-items-center">
                 <!-- Logo and link to home page -->
-                <a class="navbar-brand" href="index.html">
-                    <img src="imgs/logo.png" width="50" height="48" class="d-inline-block align-text-top rotate-center"
-                        alt="Marlboro High School Music logo">
-                </a>
-
+                <a class="navbar-brand" href="index.html"><img src="imgs/logo.png" width="50" height="48"
+                        class="d-inline-block align-text-top rotate-center" alt="Marlboro High School Music logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <!-- Navigation links -->
-                <div class="d-flex">
-                    <ul class="navbar-nav ms-auto d-flex flex-row">
-                        <li class="nav-item me-3">
-                            <a class="nav-link" href="index.html">Home</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto text-end">
+                        <li class="nav-item me-md-3">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item me-3">
-                            <a class="nav-link" href="calendar.html">Calendar</a>
+                        <li class="nav-item me-md-3">
+                            <a class="nav-link" href="calendar.html">Calender</a>
                         </li>
-                        <li class="nav-item me-3">
+                        <li class="nav-item me-md-3">
                             <a class="nav-link" href="ensembles.html">Ensembles</a>
                         </li>
                         <li class="nav-item">
@@ -62,8 +63,8 @@
                 <!-- Banner section with a welcoming message -->
                 <div class="col-12 home-main-banner text-center">
                     <h1>WELCOME<br>To Our Band Program</h1>
-                    <h3>If you're just here for the calendar, click the link below - but if you need information than
-                        keep scrolling!</h3>
+                    <h3><b>If you're just here for the calendar, click the link below - but if you need information than
+                        keep scrolling!</b></h3>
                     <!-- Button linking to the calendar page -->
                     <a href="calendar.html" type="button" class="btn btn-light drop-shadow p-3">Calendar</a>
                 </div>
