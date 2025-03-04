@@ -163,7 +163,7 @@ a.drop-shadow:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 25rem;
+    height: 32rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -269,6 +269,7 @@ a.drop-shadow:hover {
 #vue_app {
     background-color: #fdb410;
     /* Sets the background color for the vue_app container */
+    height: 23rem;
 }
 
 /* h1s sized for ensemble.html */
